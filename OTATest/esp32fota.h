@@ -2,6 +2,7 @@
    esp32 firmware OTA
    Date: December 2018
    Author: Chris Joyce <https://github.com/chrisjoyce911/esp32FOTA/esp32FOTA>
+   Updated by: Christian Wallukat (https://github.com/trlink)
    Purpose: Perform an OTA update from a bin located on a webserver (HTTP Only)
 */
 
@@ -13,6 +14,7 @@
 #include "Arduino.h"
 
 
+//struct containing the files to download to SPIFFS
 struct _sFiles
 {
   String  strSource;
@@ -45,8 +47,6 @@ class esp32FOTA
 
     
     String getDeviceID();
-    
-    
 };
 
 

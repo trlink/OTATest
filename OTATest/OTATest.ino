@@ -1,3 +1,7 @@
+//includes
+//////////
+#include <Arduino.h>
+#include "heltec.h"
 #include "esp32fota.h"
 #include <WiFi.h>
 #include <SPIFFS.h>
@@ -7,8 +11,8 @@
 #define INSTALL_PORT 80
 
 
-const char *ssid = "Xperia Z5 Premium_c761";
-const char *password = "pornporn";
+const char *ssid = "";
+const char *password = "";
 
 
 

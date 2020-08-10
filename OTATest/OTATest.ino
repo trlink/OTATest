@@ -29,6 +29,15 @@ void setup()
    
     return;
   };
+
+  
+  bool formatted = SPIFFS.format();
+ 
+  if(formatted){
+    Serial.println("\n\nSuccess formatting");
+  }else{
+    Serial.println("\n\nError formatting");
+  }
 }
 
 void setup_wifi()

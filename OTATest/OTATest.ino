@@ -1,16 +1,27 @@
 //includes
 //////////
 #include <Arduino.h>
-#include "heltec.h"
 #include "esp32fota.h"
 #include <WiFi.h>
 #include <SPIFFS.h>
 
+//please uncomment for your hardware
+////////////////////////////////////
+#define HARDWARE_TBEAM
+//#define HARDWARE_ESP
 
-#define INSTALL_DIR "http://62.75.216.36/trlink/install/install.json"
-#define INSTALL_PORT 80
+#ifdef HARDWARE_ESP
+  #include "heltec.h"
+  #define INSTALL_DIR "http://62.75.216.36/trlink/install/install.json"
+  #define INSTALL_PORT 80
+#endif
+#ifdef HARDWARE_TBEAM
+  #define INSTALL_DIR "http://62.75.216.36/trlink/install/tbinstall.json"
+  #define INSTALL_PORT 80
+#endif
 
-
+//enter credentials to your WLan here
+/////////////////////////////////////
 const char *ssid = "";
 const char *password = "";
 

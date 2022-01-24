@@ -37,5 +37,5 @@ Now connect to the TR-Link Access-Point and browse to 192.168.5.1 and configure 
 
 Other ressources:
 
-https://teamrosengarten.weebly.com/tr-link.html (German)
+https://teamrosengarten.weebly.com/tr-link.html (German)<br/>
 https://www.facebook.com/TeamRosengartenLink (German, sometimes english)
